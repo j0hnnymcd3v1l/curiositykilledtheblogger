@@ -1,7 +1,7 @@
 {{ define "main" }}
 <article class="single">
   <header class="single-header">
-    <a href="/" class="single-back">&larr; Back</a>
+    <a href="{{ "" | relURL }}" class="single-back">&larr; Back</a>
     <span class="single-cat">{{ with .Params.categories }}{{ index . 0 }}{{ end }}</span>
     <h1 class="single-title">{{ .Title }}</h1>
     <div class="single-meta">
