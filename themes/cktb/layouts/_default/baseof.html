@@ -1,49 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}</title>
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,300;1,8..60,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/css/style.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.7">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9; min-height: 14.0px}
+    span.s1 {text-decoration: underline ; font-kerning: none}
+  </style>
 </head>
 <body>
-  <nav class="nav">
-    <a href="/" class="nav-logo">CKTB</a>
-    <div class="nav-links">
-      <a href="/categories/fiction/">Fiction</a>
-      <a href="/categories/non-fiction/">Non-Fiction</a>
-      <a href="/categories/flash-fiction/">Flash Fiction</a>
-      <a href="/about/">About</a>
-    </div>
-    <button class="nav-toggle" aria-label="Menu">
-      <span></span><span></span>
-    </button>
-  </nav>
-
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
-
-  <footer class="footer">
-    <div class="footer-left">
-      <span class="footer-domain">curiositykilledtheblogger.com</span>
-      <span class="footer-sep">·</span>
-      <span class="footer-copy">&copy; {{ now.Year }} Miguel Coias</span>
-    </div>
-    <div class="footer-links">
-      {{ with .Site.Params.actorSite }}<a href="{{ . }}">Actor</a>{{ end }}
-      {{ with .Site.Params.instagram }}<a href="{{ . }}">Instagram</a>{{ end }}
-    </div>
-  </footer>
-
-  <script>
-    document.querySelector('.nav-toggle')?.addEventListener('click', function() {
-      document.querySelector('.nav-links').classList.toggle('open');
-    });
-  </script>
+<p class="p1"><span class="s1"><a href="file:///">&lt;!DOCTYPE html&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///">&lt;html lang="en"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///">&lt;head&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">  </span>&lt;title&gt;{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} — {{ .Site.Title }}{{ end }}&lt;/title&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">  </span>&lt;meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,300;1,8..60,400&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="{{ "css/style.css" | relURL }}"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///">&lt;/head&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///">&lt;body&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">  </span>&lt;nav class="nav"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">    </span>&lt;a href="{{ "" | relURL }}" class="nav-logo"&gt;CKTB&lt;/a&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">    </span>&lt;div class="nav-links"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">      </span>&lt;a href="{{ "categories/fiction/" | relURL }}"&gt;Fiction&lt;/a&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">      </span>&lt;a href="{{ "categories/non-fiction/" | relURL }}"&gt;Non-Fiction&lt;/a&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">      </span>&lt;a href="{{ "categories/flash-fiction/" | relURL }}"&gt;Flash Fiction&lt;/a&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">      </span>&lt;a href="{{ "about/" | relURL }}"&gt;About&lt;/a&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">    </span>&lt;/div&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">    </span>&lt;button class="nav-toggle" aria-label="Menu"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">      </span>&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">    </span>&lt;/button&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">  </span>&lt;/nav&gt;</a></span></p>
+<p class="p2"><span class="s1"><a href="file:///"></a></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">  </span>&lt;main&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">    </span>{{ block "main" . }}{{ end }}</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">  </span>&lt;/main&gt;</a></span></p>
+<p class="p2"><span class="s1"><a href="file:///"></a></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">  </span>&lt;footer class="footer"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">    </span>&lt;div class="footer-left"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">      </span>&lt;span class="footer-domain"&gt;curiositykilledtheblogger.com&lt;/span&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">      </span>&lt;span class="footer-sep"&gt;·&lt;/span&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">      </span>&lt;span class="footer-copy"&gt;&amp;copy; {{ now.Year }} Miguel Coias&lt;/span&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">    </span>&lt;/div&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">    </span>&lt;div class="footer-links"&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">      </span>{{ with .Site.Params.actorSite }}&lt;a href="{{ . }}"&gt;Actor&lt;/a&gt;{{ end }}</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">      </span>{{ with .Site.Params.instagram }}&lt;a href="{{ . }}"&gt;Instagram&lt;/a&gt;{{ end }}</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">    </span>&lt;/div&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</a></span></p>
+<p class="p2"><span class="s1"><a href="file:///"></a></span><br></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">  </span>&lt;script&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">    </span>document.querySelector('.nav-toggle')?.addEventListener('click', function() {</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">      </span>document.querySelector('.nav-links').classList.toggle('open');</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">    </span>});</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///"><span class="Apple-converted-space">  </span>&lt;/script&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///">&lt;/body&gt;</a></span></p>
+<p class="p1"><span class="s1"><a href="file:///">&lt;/html&gt;</a></span></p>
 </body>
 </html>
