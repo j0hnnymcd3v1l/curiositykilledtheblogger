@@ -6,7 +6,7 @@ excerpt: "Limbo — I have spent so much time underground that the days are blur
 words: 1171
 ---
 
-![Photo Trilogy](/curiositykilledtheblogger/images/photo-trilogy.jpeg)
+![Photo Trilogy](/images/photo-trilogy.jpeg)
 
 **Limbo**
 
@@ -32,7 +32,7 @@ Now I come to the store every week on the same day, at the same time, hoping to 
 
 Wagging his little tail, young Ralphie could barely contain himself.  His mom had asked him to go with her over to the tracks for the first time. The rite of passage to become an adult.
 
-He had never been out of their little village. He was going to go outside where the giants live and the big steel machines roam. "It's loud and smelly and the air is so warm, and the wind blows really fast" at least that is what he was told. His mom set the ground rules for their little excursion: "Follow me closely and walk where I walk. There are some parts of the metal track you do not want to touch. They will be warmer than the others, and they will carry electricity. Do you understand Ralphie?". Yes, mom, do not touch the warm metal parts, I got it. Can we go already?". His excitement was justified as he had heard countless stories of delicious snacks one can find in such an oasis. Ralphie wanted to see it with his own eyes, smell it with his own little snout. Maybe taste a little morsel of the giant's discarded food. He had heard about the warm and inviting smell and the delicious taste of such gifts.
+He had never been out of their little village. He was going to go outside where the giants live and the big steel machines roam. "It's loud and smelly and the air is so warm, and the wind blows really fast" at least that is what he was told. His mom set the ground rules for their little excursion: "Follow me closely and walk where I walk. There are some parts of the metal track you do not want to touch. They will be warmer than the others, and they will carry electricity. Do you understand Ralphie?". Yes, mom, do not want to touch the warm metal parts, I got it. Can we go already?". His excitement was justified as he had heard countless stories of delicious snacks one can find in such an oasis. Ralphie wanted to see it with his own eyes, smell it with his own little snout. Maybe taste a little morsel of the giant's discarded food. He had heard about the warm and inviting smell and the delicious taste of such gifts.
 
 Ralphie followed his mom through the dark passages. They were snug, hugging his furry exterior. Its walls tickled him, so he increased his speed, and he slid off the small opening crashing onto the tracks into a puddle. He shook off the water from his fur and composed himself. "Look at what you've done? Now you are all wet. When the train comes you are going to be very cold." His mom said. "Sorry mom, I just took a tumble."
 
