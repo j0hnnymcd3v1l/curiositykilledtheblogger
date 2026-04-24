@@ -1,0 +1,21 @@
+baseURL = "https://curiositykilledtheblogger.com/"
+languageCode = "en-us"
+title = "Curiosity Killed the Blogger"
+theme = "cktb"
+paginate = 10
+enableRobotsTXT = true
+
+[params]
+  author = "Miguel Coias"
+  tagline = "Read at your own peril."
+  description = "Fiction, flash fiction, and essays from a mind that won't sit still."
+  actorSite = "https://miguelcoias.com"
+  instagram = "https://www.instagram.com/imphotomatic/"
+
+[taxonomies]
+  category = "categories"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

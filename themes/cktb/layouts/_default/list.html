@@ -1,0 +1,26 @@
+{{ define "main" }}
+<section class="category-header">
+  <a href="/" class="single-back">&larr; All posts</a>
+  <h1 class="category-title">{{ .Title }}</h1>
+  <p class="category-count">{{ len .Pages }} {{ if eq (len .Pages) 1 }}piece{{ else }}pieces{{ end }}</p>
+</section>
+
+<section class="posts">
+  {{ range .Pages.ByDate.Reverse }}
+  <article class="post">
+    <div class="post-date">
+      <span class="post-month">{{ .Date.Format "Jan 2" }}</span>
+      <span class="post-year">{{ .Date.Format "2006" }}</span>
+    </div>
+    <div class="post-body">
+      <span class="post-cat">{{ with .Params.categories }}{{ index . 0 }}{{ end }}</span>
+      <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <p class="post-excerpt">{{ with .Params.excerpt }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
+    </div>
+    <div class="post-meta">
+      {{ with .Params.words }}<span class="post-wc">{{ . }} words</span>{{ end }}
+    </div>
+  </article>
+  {{ end }}
+</section>
+{{ end }}

@@ -1,0 +1,7 @@
+name = "CKTB"
+license = "MIT"
+licenselink = ""
+description = "Dark editorial theme for Curiosity Killed the Blogger"
+
+[author]
+  name = "Miguel Coias"

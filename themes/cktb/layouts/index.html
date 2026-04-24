@@ -1,0 +1,52 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="hero-accent"></div>
+  <h1 class="hero-title">Curiosity Killed<br>the <em>Blogger</em></h1>
+  <p class="hero-author">Miguel Coias</p>
+  <div class="hero-line"></div>
+  <p class="hero-desc">{{ .Site.Params.description }}</p>
+</section>
+
+<section class="filter" id="filter">
+  <button class="cat active" data-cat="all">All</button>
+  {{ range .Site.Taxonomies.categories }}
+  <button class="cat" data-cat="{{ .Page.Title | urlize }}">{{ .Page.Title }}</button>
+  {{ end }}
+</section>
+
+<section class="posts">
+  {{ range .Site.RegularPages.ByDate.Reverse }}
+  <article class="post" data-category="{{ with .Params.categories }}{{ index . 0 | urlize }}{{ end }}">
+    <div class="post-date">
+      <span class="post-month">{{ .Date.Format "Jan 2" }}</span>
+      <span class="post-year">{{ .Date.Format "2006" }}</span>
+    </div>
+    <div class="post-body">
+      <span class="post-cat">{{ with .Params.categories }}{{ index . 0 }}{{ end }}</span>
+      <h2 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+      <p class="post-excerpt">{{ with .Params.excerpt }}{{ . }}{{ else }}{{ .Summary }}{{ end }}</p>
+    </div>
+    <div class="post-meta">
+      {{ with .Params.words }}<span class="post-wc">{{ . }} words</span>{{ end }}
+    </div>
+  </article>
+  {{ end }}
+</section>
+
+<script>
+  document.querySelectorAll('.cat').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.cat').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const cat = btn.dataset.cat;
+      document.querySelectorAll('.post').forEach(p => {
+        if (cat === 'all' || p.dataset.category === cat) {
+          p.style.display = '';
+        } else {
+          p.style.display = 'none';
+        }
+      });
+    });
+  });
+</script>
+{{ end }}
